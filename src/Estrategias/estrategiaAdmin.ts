@@ -23,7 +23,7 @@ export class EstrategiaAdmin implements AuthenticationStrategy {
             if (datos) {
                 if (datos.data.role) {
                     datos.data.role.forEach(function (x: any) {
-                        if (x.nombre == "Administrador") {
+                        if (x.nombre == "Administrator") {
                             respuesta = true;
                         }
                     });
