@@ -89,7 +89,7 @@ footer{
 }
 
 .copyright{
-    color: #FFFFFF;
+    color: black;
     font-size: 13px;
     margin: 20px;
 }
@@ -215,18 +215,18 @@ td, th{
 }
 
 .contenido-diferenciales{
-    width: 640px;
+    width: 820px;
     margin: 0 auto;
 }
 
 .lista-diferenciales{
     width: 40%;
     display: inline-block;
-    vertical-align:top
+    vertical-align: top
 }
 
 .items{
-    line-height: 2.2;}
+    line-height: 2.8;}
 
 .items:before{
     content:"☆";
@@ -237,7 +237,7 @@ td, th{
 }
 
 .imagen-diferenciales{
-    width: 60%;
+    width: 40%;
     transition: 400ms;
     box-shadow: 10px -10px 20px 15px #000000;
 }
@@ -247,7 +247,7 @@ td, th{
 }
 
 .video{
-    width: 560px;
+    width: 640px;
     margin: 1em auto ;
 }
 
