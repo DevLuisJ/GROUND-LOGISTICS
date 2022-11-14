@@ -12,6 +12,7 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
+    /*background-image:"images/anc.jpg";*/
     background: url('images/anc.jpg');
     background-size: cover;
     background-position: center center;
