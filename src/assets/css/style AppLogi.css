@@ -1,0 +1,270 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 1040px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {       /* hover: para capturar movim. mouse, sobre algún link*/
+    color: #c78c19;
+    text-decoration: underline; 
+}
+
+.servicios{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.servicios li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px; 
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.servicios li:hover{    /* hover: para capturar movim. mouse en lista servicios*/
+    border-color: #c78c19;
+}
+
+.servicios li:active{      /* active: para capturar clickado del mouse*/
+    border-color: #088c19;
+} 
+
+.servicios h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.servicios li:hover h2{       /* acá me afecta caja seleccionada y da aumento tamaño, resaltado*/
+    font-size: 34px;
+}
+
+.servicio-descripcion{
+    font-size: 18px;
+}
+
+.servicio-precio{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(/assets/images/watercolor-g2bed0f453_1920.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: black;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.caja2{
+    width: 940px;
+    margin: 0 auto;     } 
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{             /* para que aplique las mismas condiciones al los bloques, seguidos por coma*/
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: aquamarine;
+    border: none;
+    border-radius: 5px;
+    transition: 2s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: paleturquoise;
+    /*  Darle efecto de movimiento */
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Aquí inicia el CSS para nuestra home */
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;   /* 2em: Significa dos veces el tamaño de la fuente del navegador*/
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px 10px red;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+    color: blue;
+}
+
+.principal em{
+    font-style: italic;
+    color: blueviolet;
+}
+
+.faro{
+    width: 20%;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    /*      Sombras internas */
+}
+
+.contenido-diferenciales{
+    width: 820px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top
+}
+
+.items{
+    line-height: 2.8;}
+
+.items:before{
+    content:"☆";
+}
+
+.items:first-child{   
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 40%;
+    transition: 400ms;
+    box-shadow: 10px -10px 20px 15px #000000;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 640px;
+    margin: 1em auto ;
+}
+
+@media screen and (max-width:480px){            /* Configuraciones para moviles se revisa con F12 en browser */
+    h1, .caja2{
+       text-align: center; 
+    }
+    nav, .caja2{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .caja2{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales, .caja2{
+        width: 100%;
+    }
+    body{
+        background: red;
+    }
+}

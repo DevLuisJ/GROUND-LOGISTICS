@@ -1,0 +1,126 @@
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 1040px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {       /* hover: para capturar movim. mouse, sobre algún link*/
+    color: #c78c19;
+    text-decoration: underline; 
+}
+
+.servicios{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.servicios li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px; 
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.servicios li:hover{    /* hover: para capturar movim. mouse en lista servicios*/
+    border-color: #c78c19;
+}
+
+.servicios li:active{      /* active: para capturar clickado del mouse*/
+    border-color: #088c19;
+} 
+
+.servicios h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.servicios li:hover h2{       /* acá me afecta caja seleccionada y da aumento tamaño, resaltado*/
+    font-size: 34px;
+}
+
+/*Aquí inicia el CSS para nuestra home */
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;   /* 2em: Significa dos veces el tamaño de la fuente del navegador*/
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px 10px red;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+    color: blue;
+}
+
+.principal em{
+    font-style: italic;
+    color: blueviolet;
+}
+
+@media screen and (max-width:480px){            /* Configuraciones para moviles se revisa con F12 en browser */
+    h1, .caja2{
+       text-align: center; 
+    }
+    nav, .caja2{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .caja2{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales, .caja2{
+        width: 100%;
+    }
+    body{
+        background: red;
+    }
+}

@@ -1,0 +1,85 @@
+
+<div class="contacto">
+    <head> 
+        <meta charset="UTF-8">
+        <title> Contacto - App Logistics - InnovaSoft </title>
+        <link rel="stylesheet" href="/angular/FrontendAppLogistic/src/assets/css/reset.css">
+        <link rel="stylesheet" href="/angular/FrontendAppLogistic/src/assets/css/style AppLogi.css">
+    </head>
+
+        <main>
+            <body>
+                <header>
+                    <div class="caja"> 
+                    </div>
+                </header>
+            <div class="caja2">
+            <form action="">
+                <label for="nombreapellido"> Nombre y Apellido(s): </label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="celular"> Número Celular: </label>
+                <input type="tel" id="celular" class="input-padron" required placeholder="(##) ### ### ####">
+
+                <label for="telefono"> Número Teléfono: </label>
+                <input type="tel" id="telefono" class="input-padron" placeholder="(##) ### ### ####">
+
+                <label for="email"> Correo Electrónico (e-mail): </label>
+                <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="mensaje"> Mensaje a enviarnos, que nos quiere contar: </label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+                <fieldset>
+                    <legend> ¿Cómo le gustaría que lo contactáramos...??? </legend>
+                
+                    <label for="radio-email"> <input type="radio" name="contacto" value="email" id="radio-email"> E-mail </label>
+                    <label for="radio-telefono"> <input type="radio" name="contacto" value="telefono" id="radio-telefono"> Teléfono </label>
+                    <label for="radio-celular"> <input type="radio" name="contacto" value="celular" id="radio-celular"> Celular </label>
+                    <label for="radio-whatsapp"> <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked> WhatsApp </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>En cuál horario prefiere ser atentido</legend>
+                    <select>
+                        <option>Mañana - 7:00 am - 12:00 m</option>
+                        <option>Tarde - 14:00 pm - 18:00 pm</option>
+                        <option>Noche - 19:00 pm - 22:00 pm</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked> ¿Le gustará recibir novedades de App Logistics - InnovaSoft ??? </label>
+
+                <input type="submit" value=" Enviar Formulario con Datos " class="enviar">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Días</th>
+                        <th>Horarios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Jueves</td>
+                        <td>8:00 am - 20:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes y Sábados</td>
+                        <td>7:00 am - 21:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Domingos - Feriados</td>
+                        <td>10:00 am - 18:00 pm</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+            </div>  
+        </body>  
+        </main>
+    </div>
+
