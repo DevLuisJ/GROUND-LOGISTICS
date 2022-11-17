@@ -32,8 +32,7 @@ Login(){
     }else{
       let datos = new CredentialsUserModel();
       datos.user=this.formularioLogin.controls['user'].value;
-     // datos.password=CryptoJS.MD5(this.formularioLogin.controls['password'].value).toString();
-     datos.password=this.formularioLogin.controls['password'].value
+      datos.password=CryptoJS.MD5(this.formularioLogin.controls['password'].value).toString();
      this.serviceSecurity.Login(datos).subscribe({
         next: (data:any)=>console.log(data),
         error:(e)=>console.log(e)
