@@ -215,7 +215,7 @@ export class UserController {
     @requestBody() credenciales: Credenciales
   ) {
     console.log(`Clave ${credenciales.password}`);
-    credenciales.password = this.servicioautenticacion.EncriptarPassword(credenciales.password);
+    //credenciales.password = this.servicioautenticacion.EncriptarPassword(credenciales.password);
     console.log(`Clave cifrada ${credenciales.password}`);
     let u = await this.servicioautenticacion.IdentificarUsuario(credenciales);
     if (u) {
