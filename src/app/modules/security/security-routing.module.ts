@@ -1,4 +1,4 @@
-import { createComponent, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChangePasswordComponent } from './general/change-password/change-password.component';
 import { LoginComponent } from './general/login/login.component';
@@ -14,12 +14,10 @@ const routes: Routes = [
   path:"create",
   component: CreateComponent
 },
-
 {
   path:"changePassword",
   component: ChangePasswordComponent
 },
-
 {
   path:"recovery",
   component: RecoveryComponent

@@ -1,11 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
+
+
+
+
+
+
 body{
-    font-family: "Open Sans";
-    color: #fff;
+    /*font-family: "Open Sans";*/
+    color: beige;
     background-color: #344a72;
 }
 section{
@@ -22,29 +28,29 @@ section{
     left: 50%;
     transform: translate(-50%,-50%);
     background: linear-gradient(rgba(0,0,0,0,3),rgba(0,0,0,0,3));
-    width: 380px;
-    padding: 50px 30px;
+    width: 450px;
+    padding: 20px 20px;
     border-radius: 10px;
-    box-shadow: 7px 7px 60px #000;
+    box-shadow: 7px 7px 60px ;
 }
 h1{
     text-transform: uppercase;
-    font-style: 2em;
+    font-style: 4em;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 .control input{
     width: 100%;
     display: block;
-    padding: 10px;
-    color: #222;
+    padding: 4px;
     border: none;
     outline: none;
     margin: 1em 0;
-
+    font-size: 24px;
+    color: greenyellow;
 }
 .control input[type="submit"]{
-    background: crimson;
+
     color: #fff;
     text-transform: uppercase;
     font-style: 1.2em;
@@ -53,6 +59,8 @@ h1{
 }
 .control input[type="submit"]:hover{
     opacity: 1;
+
+
 }
 .link{
     text-align: center;
@@ -78,18 +86,14 @@ h1{
     border-radius: 10px;
     box-shadow: 7px 7px 60px #000;
 }
-h1{text-transform: uppercase;
-    font-style: 2em;
-    text-align: center;
-    margin-bottom: 2em;
-}
 h4{
     text-align: center;
 }
 form{
-    width: 300px;
-    margin-left: 20px;
+    width: 350px;
+    margin-left: 40px;
     font-size: 18px;
+
 }
 form input{
     width: 100%;
@@ -118,10 +122,10 @@ input[type="button"]:hover{
 p{
     text-align: center;
     padding-top: 20px;
-    font-size: 15px;
+    font-size: 22px;
 }
 p a{
-    color: #49c1a2;
+    color: greenyellow;
 }
 .para-2{
     text-align: center;
