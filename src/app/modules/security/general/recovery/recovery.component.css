@@ -5,10 +5,6 @@
 }
 
 
-
-
-
-
 body{
   /*font-family: "Open Sans";*/
   color: beige;
@@ -32,6 +28,7 @@ section{
   padding: 20px 20px;
   border-radius: 10px;
   box-shadow: 7px 7px 60px ;
+  color: orange;
 }
 h1{
   text-transform: uppercase;
@@ -47,7 +44,7 @@ h1{
   outline: none;
   margin: 1em 0;
   font-size: 24px;
-  color: greenyellow;
+  color: purple; background-color: orange;
 }
 .control input[type="submit"]{
 
@@ -103,7 +100,7 @@ form input{
   border: none;
   outline: none;
   margin: 1em 0;
-
+  background-color: white;
 }
 input[type="button"]{
   width: 320px;

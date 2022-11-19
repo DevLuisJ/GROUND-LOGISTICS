@@ -16,8 +16,7 @@
             <form [formGroup]="formularioLogin" action="#">
                 <div class="control">
                     <label for="user"> User Name </label>
-                    <input formControlName="user" type="text" name="name" id="user" placeholder="Enter username"
-                        required>
+                    <input formControlName="user" type="text" name="name" id="user" placeholder="Enter username" required>
                 </div>
                 <div class="control">
                     <label for="psw">Password</label>
@@ -32,7 +31,7 @@
                 -->
                 <div class="center">
                     <button (click)=" Login() " class="btn waves-effect green lighten-2" type="submit" name="action">Login
-                        <i class="material-icons right"> send</i>
+                        <i class="material-icons right"> send </i>
                     </button>
                 </div>
                 <p> Recover Password: <a routerLink="/security/recovery"> Here </a>

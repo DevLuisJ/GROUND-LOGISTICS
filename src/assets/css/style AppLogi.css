@@ -100,12 +100,14 @@ footer{
 
 form{
     margin: 40px 0;
+    font-size: 28px;
 }
 
 form label, form legend{             /* para que aplique las mismas condiciones al los bloques, seguidos por coma*/
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
+    
 }
 
 .input-padron{

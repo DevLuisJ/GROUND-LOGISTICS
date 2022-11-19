@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
-
-
-
 body{
     /*font-family: "Open Sans";*/
     color: beige;
@@ -32,6 +26,12 @@ section{
     padding: 20px 20px;
     border-radius: 10px;
     box-shadow: 7px 7px 60px ;
+    color: orange;
+}
+form{
+    width: 350px;
+    margin-left: 40px;
+    font-size: 28px;
 }
 h1{
     text-transform: uppercase;
@@ -47,15 +47,15 @@ h1{
     outline: none;
     margin: 1em 0;
     font-size: 24px;
-    color: greenyellow;
+    background-color: white;
 }
 .control input[type="submit"]{
-
     color: #fff;
     text-transform: uppercase;
     font-style: 1.2em;
     opacity: .7;
     transition: opacity .3s ease;
+
 }
 .control input[type="submit"]:hover{
     opacity: 1;
@@ -88,12 +88,6 @@ h1{
 }
 h4{
     text-align: center;
-}
-form{
-    width: 350px;
-    margin-left: 40px;
-    font-size: 18px;
-
 }
 form input{
     width: 100%;
@@ -144,7 +138,6 @@ p a{
     color: #fff;
     opacity: .6;
     transition: opacity .3s ease;
-
 }
 .link a:hover{
     opacity: 1;
