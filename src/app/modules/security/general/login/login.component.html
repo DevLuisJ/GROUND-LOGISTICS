@@ -12,17 +12,27 @@
 <body>
     <section>
         <div class="form-container">
-            <h1>login form</h1>
+            <h1>Login Form</h1>
             <form [formGroup]="formularioLogin" action="#">
                 <div class="control">
                     <label for="user"> User Name </label>
                     <input formControlName="user" type="text" name="name" id="user" placeholder="Enter username" required>
+                </div>
+                <div class="errorValidacion">
+                <label *ngIf="formularioLogin.controls['user'].errors && formularioLogin.controls['user'].dirty">
+                    El Usuario suministrado NO es válido, debe ingresar con el e-mail
+                </label>
                 </div>
                 <div class="control">
                     <label for="psw">Password</label>
                     <input formControlName="password" type="password" name="psw" id="psw" placeholder="Enter password"
                         required>
                 </div>
+                <div class="errorValidacion">
+                    <label *ngIf="formularioLogin.controls['psw'].errors && formularioLogin.controls['psw'].dirty">
+                        La contraseña debe contener: ocho (8) caracteres.
+                    </label>
+                    </div>
                 <span><input type="checkbox"> Remember me. </span>
                 <!--
                 <div class="control">
@@ -30,7 +40,7 @@
                 </div>
                 -->
                 <div class="center">
-                    <button (click)=" Login() " class="btn waves-effect green lighten-2" type="submit" name="action">Login
+                    <button (click)="Login()" class="btn waves-effect green lighten-2" type="submit" name="action">  . Login .
                         <i class="material-icons right"> send </i>
                     </button>
                 </div>

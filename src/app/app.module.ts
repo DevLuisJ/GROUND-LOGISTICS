@@ -14,7 +14,7 @@ import { HomeComponent } from './extras/pages/home/home.component';
 import { PageNotFoundComponent } from './extras/pages/page-not-found/page-not-found.component';
 import { ContactoComponent } from './extras/pages/contacto/contacto.component';
 import { ServiciosComponent } from './extras/pages/servicios/servicios.component';
-import{HttpClientModule} from "@angular/common/http";
+import{HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [

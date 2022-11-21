@@ -31,7 +31,7 @@ section{
   color: orange;
 }
 h1{
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-style: 4em;
   text-align: center;
   margin-bottom: 1em;
@@ -115,23 +115,26 @@ input[type="button"]{
 }
 input[type="button"]:hover{
   opacity: 1;
+  background-color: #49c1a2;
 }
 p{
   text-align: center;
   padding-top: 20px;
   font-size: 22px;
+  color: whitesmoke;
 }
 p a{
-  color: greenyellow;
+  color: whitesmoke;
 }
 .para-2{
+  font-size: 20px;
   text-align: center;
   color: whitesmoke;
-  font-size: 15px;
   margin-top: -10px;
 }
 .para-2 a{
-  color: #49c1a2;
+  font-size: 20px;
+  color: yellowgreen;
 }
 .link{
   text-align: center;
@@ -145,4 +148,11 @@ p a{
 }
 .link a:hover{
   opacity: 1;
+}
+
+.errorValidacion label{
+  color: red;
+  font-size: 15px; text-align: center;
+  font-weight: bold; /* negrita */
+
 }

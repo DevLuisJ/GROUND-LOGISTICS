@@ -5,3 +5,15 @@
 body{
     padding: 0,7%;
 }
+
+label {
+    font-size: 21px;
+    color: orange;
+}
+
+.errorValidacion label{
+    color: red;
+    font-size: 15px; text-align: center;
+    font-weight: bold; /* negrita */
+
+  }

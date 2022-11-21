@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { CredentialsUserModel } from 'src/app/models/credentials-user.model';
 import { SecurityService } from 'src/app/services/shared/security.service';
+declare const GenerarVentanaModal:any;
 const CryptoJS = require("crypto-js");
 
 @Component({
@@ -28,7 +29,7 @@ export class LoginComponent implements OnInit {
 }
 Login(){
     if(this.formularioLogin.invalid){
-        alert("Los datos no son Validos");
+        GenerarVentanaModal("Todos los campos son Requeridos");
     }else{
       let datos = new CredentialsUserModel();
       datos.user=this.formularioLogin.controls['user'].value;
@@ -36,7 +37,7 @@ Login(){
      this.serviceSecurity.Login(datos).subscribe({
         next: (data:any)=>console.log(data),
         error:(e)=>console.log(e)
-      });  
+      });
     }
 }
 }

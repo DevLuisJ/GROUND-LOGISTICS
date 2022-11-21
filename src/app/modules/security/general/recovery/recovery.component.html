@@ -11,20 +11,37 @@
 
 <body>
   <section>
-  <div class="form-container">
-        <h1>Recover Password </h1>
-        <form action="#"> <br>
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email register" required>
-            <label>Identification</label>
-            <input type="text" placeholder="Enter your identification register" required><br> <br>
-            <input type="button" value="Submit">
-        </form>
-        <p>By clicking the Sign Up button, you agree to our <br> <br>
+    <div class="form-container">
+      <h1>Recover Password </h1>
+      <form [formGroup]="formularioRecovery" action="#"> <br>
+        <label>Email</label>
+        <input formControlName="email" type="email" placeholder="Enter your email register" required>
+        <div class="errorValidacion">
+          <label *ngIf="formularioRecovery.controls['email'].errors && formularioRecovery.controls['email'].dirty">
+            El E-mail suministrado NO es válido, debe ingresar un e-mail.
+          </label>
+        </div>
+        <label>Identification</label>
+        <input formControlName="identification" type="text" placeholder="Enter your identification register"
+          required><br> <br>
+        <div class="errorValidacion">
+          <label
+            *ngIf="formularioRecovery.controls['identification'].errors && formularioRecovery.controls['identification'].dirty">
+            La Identificación debe contener: diez (10) digitos.
+          </label>
+        </div>
+        <div class="errorValidacion">
+          <input
+            [disabled]="formularioRecovery.controls['email'].errors || formularioRecovery.controls['identification'].errors"
+            (click)="Recovery()" type="button" value="Submit">
+        </div>
+      </form>
+      <p>By clicking the Sign Up button, you agree to our <br> <br>
         <a href="#">Terms and coditions</a> and <a href="#">Policy Privacy</a>
-        </p>
-        <p class="para-2">Already have an account? <a routerLink="/security/login">Login here</a></p>
+      </p>
+      <p class="para-2">Already have an account? <a routerLink="/security/login"> Login Here </a></p>
     </div>
   </section>
 </body>
+
 </html>
