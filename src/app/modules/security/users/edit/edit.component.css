@@ -1,0 +1,26 @@
+h3 {
+  color: blue;
+  text-align: center;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  /*background-color: #BBBBBB;*/
+  padding: 20px 0;
+}
+
+nav a:hover {       /* hover: para capturar movim. mouse, sobre algún link*/
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.servicios li:hover{    /* hover: para capturar movim. mouse en lista servicios*/
+  border-color: #c78c19;
+}
+
+.servicios li:active{      /* active: para capturar clickado del mouse*/
+  border-color: #088c19;
+}

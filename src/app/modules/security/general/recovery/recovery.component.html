@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<div class="recovery">
+  <meta charset="UTF-8">
+  <title> Password recovery  - App Ground Logistics - InnovaSoft </title>
+  <body>
+      <main>
+
+        <section class="order-form my-4 mx-4">
+          <div class="container pt-4">
+              <div class="row">
+                  <div class="col-12">
+
+              <header>
+            <div class="row mx-2">
+            <div class="col-12 col-sm-6">
+              <div class="caja">
+                  <br> <br>
+                  <h3> password recovery </h3>
+              </div>
+
+              <body>
+                <div class="row 2"> </div>
+                  <div class="row mt-3 mx-4">
+                      <form [formGroup]="formularioRecovery" action="">
+                          <fieldset>
+                              <legend for="email address"> email: </legend>
+                              <input formControlName= "email" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="input-padron" required
+                                  placeholder="enter email">
+                          </fieldset>
+
+                          <div class="center">
+                        <button (click)="PasswordRecovery()" class="btn waves-effect green lighten-2" type="submit" name="action">Recovery
+                            <i class="material-icons right">send</i>
+                          </button>
+                        </div>
+                      </form>
+
+                  </div>
+            </body>
+            </div>
+            </div>
+      <header>
+
+        <main>
+<body>

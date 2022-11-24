@@ -1,0 +1,41 @@
+<br>
+<section class="order-form my-4 mx-4">
+
+  <form [formGroup]="formularioCreateOrder" action="#">
+
+    <div class="container pt-4">
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Order Form</h1>
+                <span>Please fill the information bellow</span>
+                <hr class="mt-1">
+            </div>
+
+            <div class="col-12 mb-2">
+              <label class="order-form-label">Individual Name</label>
+            </div>
+            <div class="col-12 col-sm-6">
+              <input formControlName= "name" class="order-form-input" placeholder="name">
+            </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+              <label class="order-form-label">Company Name</label>
+        </div>
+            <input formControlName= "company"class="order-form-input" placeholder="Company name ">
+
+            <label class="order-form-label">Vessel name</label>
+          <input formControlName= "vessel"class="order-form-input" placeholder="Vessel name ">
+          <br>
+           <label class="order-form-label">Notes</label>
+          <input formControlName= "note" class="order-form-input" placeholder=" ">
+
+            <button  (click)="createOrder()" class="btn waves-effect green lighten-2" type="submit" name="action"> Submit
+              <i class="material-icons right">send</i>
+            </button>
+        </div>
+
+  </form>
+
+</section>

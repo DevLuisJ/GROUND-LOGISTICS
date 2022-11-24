@@ -1,0 +1,43 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="order-form my-4 mx-4">
+
+    <div class="container pt-4">
+
+
+
+<fieldset class="container responsive-table">
+    <legend> Order list </legend>
+    <div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Vessel</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let item of listaOrder">
+              <td>{{item.name}} </td>
+              <td>{{item.company}}</td>
+              <td>{{item.vessel}}</td>
+              <td>
+                <button class="btn btn-success">Edit </button>
+                <button class="btn btn-success red">Delete </button>
+              </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</fieldset>
+<br>
+<br>
+<br>
+<br>

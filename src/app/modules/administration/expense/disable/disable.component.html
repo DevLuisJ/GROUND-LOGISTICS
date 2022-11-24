@@ -1,0 +1,148 @@
+<p>disable works!</p>
+
+<br>
+<section class="order-form my-4 mx-4">
+  <div class="container pt-4">
+
+    <div class="row">
+      <div class="col-12">
+        <h1>Order Form</h1>
+        <span>Please fill the information bellow</span>
+        <hr class="mt-1">
+      </div>
+      <div class="col-12">
+
+        <div class="row mx-4">
+          <div class="col-12 mb-2">
+            <label class="order-form-label">Individual Name</label>
+          </div>
+          <div class="col-12 col-sm-6">
+            <input class="order-form-input" placeholder="First name">
+          </div>
+          <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+            <input class="order-form-input" placeholder="Last name">
+          </div>
+          <div class="col-12">
+
+              <div class="row mx-4">
+                <div class="col-12 mb-2">
+                  <label class="order-form-label">Individual's ID</label>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input class="order-form-input" placeholder="Id">
+                </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+<!--
+          <div id="wrapper">
+              <label for="yes_no_radio">Confirmed or suspected Covid-19?</label>
+            <p>
+            <input type="radio" name="yes_no" checked>Yes
+            </p>
+            <p>
+            <input type="radio" name="yes_no">No
+            </p>
+            </div>
+-->
+            <div class="col-12">
+              <label class="order-form-label">Company Name</label>
+          </div>
+            <input class="order-form-input" placeholder="Company name ">
+          </div>
+        </div>
+
+        <div class="row mt-3 mx-4">
+          <div class="col-12">Vessel Name:
+              <select ng-model="vessels" id="vessel-select">
+              <option value="">--Please choose an option--</option>
+              <option value="enterprise">Enterprise</option>
+              <option value="araho">Araho</option>
+              <option value="alaskanleader">Alaskan Leader</option>
+              <option value="aleutiansable">Aleutian Sable</option>
+              </select>
+          <div>
+
+            <div>
+              <form [formGroup]="contactForm" (ngSubmit)="submit()">
+
+                <p>
+
+                  <select formControlName="country">
+                    <option [ngValue]="null" disabled>Select Country</option>
+                    <option *ngFor="let country of countries" [ngValue]="country.id">{{country.name}}</option>
+                  </select>
+
+                  <button type="submit">Submit</button>
+                </p>
+
+                </form>
+            </div>
+            <br>
+        </div>
+
+          </div>
+          <div class="row mt-3 mx-4">
+              <div class="col-12">
+                <label class="order-form-label" for="date-picker-example">Date</label>
+              </div>
+              <div class="col-12">
+                <input class="order-form-input datepicker" placeholder="Selected date" type="text"
+                  id="date-picker-example">
+              </div>
+        </div>
+
+
+        </div>
+
+        <fieldset>
+          <legend>Task:</legend>
+
+          <div>
+            <input type="checkbox" id="clinic" name="clinic">
+            <label for="clinic">Clinic</label>
+            <input type="checkbox" id="lab" name="lab">
+            <label for="lab">Lab</label>
+            <input type="checkbox" id="imaging" name="imaging">
+            <label for="imaging">Imaging</label>
+            <input type="checkbox" id="airport" name="airport">
+            <label for="airport">Airport</label>
+            <input type="checkbox" id="mileage" name="mileage">
+            <label for="Mileage">Mileage</label>
+
+          </div>
+      </fieldset>
+
+          </div>
+          <fieldset>
+              <legend>Choose services:</legend>
+
+              <div>
+                <input type="checkbox" id="cashadvance" name="cashadvance">
+                <label for="cashadvance">Cash Advance</label>
+                <input type="checkbox" id="rx" name="rx">
+                <label for="rx">Rx</label>
+                <input type="checkbox" id="lodging" name="lodging">
+                <label for="lodging">Lodging</label>
+                <input type="checkbox" id="meals" name="meals">
+                <label for="meals">Meals</label>
+
+              </div>
+          </fieldset>
+        </div>
+
+        <div class="col-12">
+          <label class="order-form-label">Notes</label>
+      </div>
+        <input class="order-form-input" placeholder=" ">
+      </div>
+        </div>
+        <br>
+
+        <div class="row mt-3">
+          <div class="col-12">
+            <button type="button" id="btnSubmit" class="btn btn-dark d-block mx-auto btn-submit">Submit</button>
+          </div>
+        </div>
+
+</section>

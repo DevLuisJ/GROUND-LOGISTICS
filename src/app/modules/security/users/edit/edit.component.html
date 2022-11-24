@@ -1,0 +1,56 @@
+<!--
+
+  <br />
+<button routerLink="../create.component.html" class="btn btn-success"> Register User</button>
+<br />
+
+<div class="Edit Users">
+    <meta charset="UTF-8">
+    <title> Edit Users - App Ground Logistics - InnovaSoft </title>
+
+    <body>
+        <main>
+            <header>
+                <div class="caja">
+                    <br> <br>
+                    <h3> Edit Users </h3>
+                </div>
+
+                <fieldset class="container responsive-table">
+                    <legend> Edit Users </legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Identification</th>
+                                <th>Name</th>
+                                <th>Last Name</th>
+                                <th>Perfil</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let p of listUsers">
+                                <td>{{p.id}}</td>
+                                <td>{{p.name}}</td>
+                                <td>{{p.lastName}}</td>
+                                <td>{{p.perfil}}</td>
+                                <td><button class="btn btn-success"> Edit User</button></td>
+                                <td><button class="btn btn-success red"> Delete User</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+
+
+                <th>Celular Phone</th>
+                <th>e-mail Address</th>
+                <th>Order Id</th>
+
+            </header>
+        </main>
+    </body>
+
+-->

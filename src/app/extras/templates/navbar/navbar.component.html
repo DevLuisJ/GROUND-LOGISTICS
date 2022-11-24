@@ -1,0 +1,29 @@
+<nav>
+    <div class="nav-wrapper cyan">
+      <div class="caja cyan">
+      <a routerLink="" class="brand-logo"> Home </a>
+      <a routerLink="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li *ngIf= "!sesionActiva"><a routerLink="security/login">Login</a></li>
+        <li *ngIf= "!sesionActiva"><a routerLink="security/create">Register</a></li>
+        <li><a routerLink="servicios"> Servicios</a></li>
+        <li><a routerLink="contacto"> Contáctenos</a></li>
+        <li *ngIf= "sesionActiva"><a routerLink="security/changePassword">Change Password</a></li>
+        <li *ngIf= "sesionActiva"><a routerLink="administration/createOrden">Create Order</a></li>
+        <li *ngIf= "sesionActiva"><a routerLink="administration/list">List Order</a></li>
+        <li *ngIf= "sesionActiva"><a routerLink="security/logout">Logout</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li *ngIf= "!sesionActiva"><a routerLink="security/login">Login</a></li>
+    <li *ngIf= "!sesionActiva"><a routerLink="security/create">Register</a></li>
+    <li><a routerLink="servicios"> Servicios</a></li>
+    <li><a routerLink="contacto"> Contáctenos</a></li>
+    <li *ngIf= "sesionActiva"><a routerLink="security/changePassword">Change Password</a></li>
+    <li *ngIf= "sesionActiva"><a routerLink="administration/createOrden">Create Order</a></li>
+    <li *ngIf= "sesionActiva"><a routerLink="administration/list">List Order</a></li>
+    <li *ngIf= "sesionActiva"><a routerLink="security/logout">Logout</a></li>
+  </ul>
